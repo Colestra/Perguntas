@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(187, 206, 240);
+}
+
 #botao {
   text-align: center;
 }
@@ -13,6 +17,99 @@
 
 h1 {
   text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: rgb(187, 206, 240);
+}
+
+.content {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+span {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(50, 141, 245);
+  padding-bottom: 30px;
+}
+
+p.text-muted {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+b {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.option {
+  display: block;
+  height: 50px;
+  background-color: #f4f4f4;
+  position: relative;
+  width: 100%;
+}
+
+.option:hover {
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+
+.option input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark,
+.crossmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 22px;
+  width: 22px;
+  background-color: #f4f4f4;
+  border-radius: 2px;
+  padding: 0;
+}
+
+.option:hover input ~ .checkmark,
+.option:hover input ~ .crossmark {
+  background-color: #e8e8e8;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  background-color: #229aeb;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover:focus {
+  border: none;
+  outline: none;
+  background-color: #229bebad;
 }
 
 .container {

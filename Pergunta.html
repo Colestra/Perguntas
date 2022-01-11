@@ -14,24 +14,27 @@
 
     <body>
         
+        <div class="wrapper bg-white rounded">
         <div id="botao">
 
-        <button type="button" name="botao" class="botaoEnviar" onclick="sortearPergunta()" >Perguntar</button>
+        <button type="button" name="botao" id="btnSortear" class="botaoEnviar" onclick="sortearPergunta()" >Perguntar</button>
 
         </div>
 
         <h1 id="pergunta"></h1>
-
+        <div class="options py-3"></div>
             
 
         <h1 id="resposta"></h1>
 
     <div id="botao">
-        <button type="button" name="botao" class="botaoEnviar"  onclick="jogar()">Jogar</button>
+        <button type="button" name="botao" id="btnJogar" class="botaoEnviar"  disabled=true onclick="jogar()">Jogar</button>
     </div>
 
         <div id="resultado"></div>
+        </div>
 
     </body>
+ 
 
 </html>
